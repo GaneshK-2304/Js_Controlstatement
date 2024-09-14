@@ -8,18 +8,18 @@
 <body>
     <script>
 
-        var a = parseInt(prompt("Enter the month"));
+        var a = prompt("Enter the month");
 
-        if (January==March==May==July==October==December){
+        if (a =="jan" || a =="march" || a =="may" || a =="july" || a=="oct"  || a=="dec"){
 
             document.write("The entered month have 31 days");
         }
-        else if(february==28){
+        else if(a=="feb"){
 
             document.write("The entered month have 28 days");
 
         }
-         if (April==June==May==August==Septemper==November){
+         else if (a=="april" || a =="june" || a== "aug"|| a =="sep"|| a=="nov"){
 
             document.write("The entered month have 30 days");
         }
