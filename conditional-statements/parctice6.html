@@ -6,48 +6,55 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Switch case condition</h1>
+    <h1>Switch Case Condition</h1>
 
     <script>
         var mark = parseInt(prompt("Enter marks"));
+        var grade;
 
-        switch (100){
-            case(mark>=90):
-            document.write("S Grade");
-            break;
-
-            case(mark>=80):
-            document.write("A Grade");
-            break;
-
-            case(mark>=70):
-            document.write("B Grade");
-            break;
-
-            case(mark>=60):
-            document.write("C Grade");
-            break;
-
-            case(mark>=50):
-            document.write("D Grade");
-            break;
-
-            case(mark>=40):
-            document.write("E Grade");
-            break;
-
-            default:
-
-            document.write("default value");
-
-
+        // Determine the grade based on ranges
+        if (mark >= 90) {
+            grade = "S Grade";
+        } else if (mark >= 80) {
+            grade = "A Grade";
+        } else if (mark >= 70) {
+            grade = "B Grade";
+        } else if (mark >= 60) {
+            grade = "C Grade";
+        } else if (mark >= 50) {
+            grade = "D Grade";
+        } else if (mark >= 40) {
+            grade = "E Grade";
+        } else {
+            grade = "Default value";
         }
 
-        
+        // Use switch with the assigned grade
+        switch (grade) {
+            case "S Grade":
+                // Additional actions if needed
+                break;
+            case "A Grade":
+                // Additional actions if needed
+                break;
+            case "B Grade":
+                // Additional actions if needed
+                break;
+            case "C Grade":
+                // Additional actions if needed
+                break;
+            case "D Grade":
+                // Additional actions if needed
+                break;
+            case "E Grade":
+                // Additional actions if needed
+                break;
+            default:
+                // Additional actions if needed
+                break;
+        }
+
+        document.write(grade);
     </script>
-
-
-
-
 </body>
 </html>
