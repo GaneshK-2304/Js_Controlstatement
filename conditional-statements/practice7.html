@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Nested if condition</h1>
+    <script>
+
+        var x = parseInt(prompt("Enter marks"));
+
+        if (x>=35){
+            document.write("You passed the exam <br>");
+
+            if(x>=90){
+                document.write("You got A grade");
+            }
+            else if (x>=80){
+                document.write("You got B grade");
+            }
+            else if (x>=70){
+                document.write("You got C grade");
+            }
+            else if (x>=60){
+                document.write("You got D grade");
+            }
+            else if (x>=50){
+                document.write("You got E grade");
+            }
+
+            else{
+
+                document.write("Please enter marks");
+            }
+
+
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
