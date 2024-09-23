@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 1</title>
+</head>
+<body>
+    <script>
+        var totalClasses = parseInt(prompt("Enter the number of classes of held"));
+        var attendedClasses = parseInt(prompt("Enter the number of classes attended"));
+
+        var assessmentMarks = parseFloat(prompt("Enter the total marks of the assessment"));
+        var securedMark = parseFloat(prompt("Enter the marks secured"));
+
+        var attendancePercentage = (attendedClasses/totalClasses) * 100;
+        document.write("Attendance percentage: " + attendancePercentage + "%<br>");
+
+        if (attendancePercentage >= 75 || securedMark / assessmentMarks * 100 > 80) {
+
+            document.write("Allowed to sit in the exam");
+        }
+        else{
+            document.write("Not allowed to sit in the exam");
+        }
+
+    </script>
+</body>
+</html>

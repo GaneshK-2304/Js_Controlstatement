@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var age = parseInt(prompt("Enter your age"));
+
+        switch(true) {
+
+            case (age>=18) :
+                document.write("You are eligible to vote");
+                break;
+
+            case (age<18) :
+                document.write("You are not eligible to vote");
+            break;
+
+            default:
+            document.write("Invalid age");
+        }
+
+    </script>
+</body>
+</html>
