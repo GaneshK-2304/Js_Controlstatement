@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var side1 = parseFloat(prompt("Enter the first side of the triangle"));
+
+        var side2 = parseFloat(prompt("Enter the second side of the triangle"));
+
+        var side3 = parseFloat(prompt("Enter the third side of the triangle"));
+
+        if (side1 === side2 && side2 === side3){
+
+            document.write("It is an equilateral trainagle");
+        }
+        else if (side1 === side2 || side2 === side3 || side1===side3){
+
+            document.write("It is an isosceles trainagle");
+
+        }
+        else{
+
+            document.write("It is a scalene trainagle");
+        }
+
+
+    </script>
+
+</body>
+</html>
